@@ -8,15 +8,15 @@ openai.api_key = ""
 # ChatGPT Context
 context = {"role": "system",
            "content": "Hello World!"}
+messages = [context]
 
 # Colors
 GREEN = "\033[92m"
 RESET = "\033[0m"
 
 while True:
-
-    messages = [context]
-    print(GREEN + ">> How can I help you?" + RESET + "(exit)")
+           
+    print(GREEN + ">> How can I help you?" + RESET + " (exit)")
     content = input(": ")
 
     # Ending the loop
